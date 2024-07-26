@@ -18,11 +18,11 @@ An iOS application to help you cook your eggs perfectly! Choose between "Soft", 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/samedkarakus/egg-timer.git
+   git clone https://github.com/samedkarakus/EggTimer.git
    ```
 2. Open the project in Xcode:
    ```sh
-   cd egg-timer
+   cd EggTimer
    open EggTimer.xcodeproj
    ```
 3. Build and run the project on your simulator or connected device.
