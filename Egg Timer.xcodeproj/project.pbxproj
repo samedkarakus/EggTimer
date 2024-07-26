@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9448D7592C2CCEA600B62ADF /* alarm-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9448D7582C2CCEA600B62ADF /* alarm-sound.mp3 */; };
 		94E6FFCF2C29B28D002D8FC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6FFCE2C29B28D002D8FC6 /* AppDelegate.swift */; };
 		94E6FFD12C29B28D002D8FC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6FFD02C29B28D002D8FC6 /* SceneDelegate.swift */; };
 		94E6FFD32C29B28D002D8FC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6FFD22C29B28D002D8FC6 /* ViewController.swift */; };
 		94E6FFD62C29B28D002D8FC6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 94E6FFD52C29B28D002D8FC6 /* Base */; };
 		94E6FFD82C29B28E002D8FC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E6FFD72C29B28E002D8FC6 /* Assets.xcassets */; };
 		94E6FFDB2C29B28E002D8FC6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 94E6FFDA2C29B28E002D8FC6 /* Base */; };
+		94E6FFE52C29E59E002D8FC6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E6FFE42C29E59E002D8FC6 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9448D7582C2CCEA600B62ADF /* alarm-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alarm-sound.mp3"; sourceTree = "<group>"; };
 		94E6FFCB2C29B28D002D8FC6 /* Egg Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Egg Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E6FFCE2C29B28D002D8FC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E6FFD02C29B28D002D8FC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		94E6FFD72C29B28E002D8FC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E6FFDA2C29B28E002D8FC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E6FFDC2C29B28E002D8FC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E6FFE42C29E59E002D8FC6 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9448D75A2C2CCEAB00B62ADF /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				9448D7582C2CCEA600B62ADF /* alarm-sound.mp3 */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		94B53F592C53D90800EEC035 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94E6FFD22C29B28D002D8FC6 /* ViewController.swift */,
+				94E6FFE42C29E59E002D8FC6 /* TimerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94B53F5A2C53D92400EEC035 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94E6FFD42C29B28D002D8FC6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		94E6FFC22C29B28D002D8FC6 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				94E6FFCE2C29B28D002D8FC6 /* AppDelegate.swift */,
+				94B53F5A2C53D92400EEC035 /* View */,
+				94B53F592C53D90800EEC035 /* Controller */,
 				94E6FFD02C29B28D002D8FC6 /* SceneDelegate.swift */,
-				94E6FFD22C29B28D002D8FC6 /* ViewController.swift */,
-				94E6FFD42C29B28D002D8FC6 /* Main.storyboard */,
 				94E6FFD72C29B28E002D8FC6 /* Assets.xcassets */,
 				94E6FFD92C29B28E002D8FC6 /* LaunchScreen.storyboard */,
 				94E6FFDC2C29B28E002D8FC6 /* Info.plist */,
+				9448D75A2C2CCEAB00B62ADF /* Alarm */,
 			);
 			path = "Egg Timer";
 			sourceTree = "<group>";
@@ -126,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E6FFD82C29B28E002D8FC6 /* Assets.xcassets in Resources */,
+				9448D7592C2CCEA600B62ADF /* alarm-sound.mp3 in Resources */,
 				94E6FFDB2C29B28E002D8FC6 /* Base in Resources */,
 				94E6FFD62C29B28D002D8FC6 /* Base in Resources */,
 			);
@@ -138,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E6FFE52C29E59E002D8FC6 /* TimerViewController.swift in Sources */,
 				94E6FFD32C29B28D002D8FC6 /* ViewController.swift in Sources */,
 				94E6FFCF2C29B28D002D8FC6 /* AppDelegate.swift in Sources */,
 				94E6FFD12C29B28D002D8FC6 /* SceneDelegate.swift in Sources */,
@@ -300,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
